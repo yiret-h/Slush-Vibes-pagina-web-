@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLUSH VIBES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <!-- Puedes reemplazar esto con la etiqueta img de tu logo real -->
+            <h1 class="logo">SLUSH <span>VIBES</span></h1>
+        </header>
+
+        <nav class="links-container">
+            <button class="glass-btn" onclick="openMenu('waffles', 'Menú Waffles')">Menu Waffles</button>
+            <button class="glass-btn" onclick="openMenu('slush-vibes', 'Menú Slush Vibes')">Menu Slush Vibes</button>
+            <a href="#" class="glass-btn link-btn">Domicilios</a>
+            <a href="#" class="glass-btn link-btn">Facebook</a>
+        </nav>
+    </div>
+
+    <!-- Modal (Ventana Emergente para el Menú) -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeMenu()">&times;</span>
+            <h2 id="modalTitle">Menú</h2>
+            <div id="menuItems" class="menu-items-grid">
+                <!-- Los items del menú se cargarán aquí dinámicamente -->
+                <div class="loader">Cargando...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
